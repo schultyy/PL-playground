@@ -12,7 +12,10 @@ At first, a function is like every other piece of code, but it has some special 
 + A return type (if no explicit return type was specified, it is nil)
 + scope (every variable declared in a function is only visible in the function)
 + Can be assigned to a variable
-A function can call itself, known as **recursion**. This can lead to more memory consumption, but it is quite useful in some scenarios. The recursion limit is **undefined at the moment**. 
+## Return values
+The result of the last expression will be returned automatically. If this behavior is not desired, auto-returning can be suppressed.
+ 
+
 # Variables
 ## Definition
 A variable is a named piece of memory, that can hold a reference on:
@@ -86,3 +89,7 @@ Define all cases with their specific stuff *and* the code which is equal for som
 		common(A,B):
 		//Common code for 'A' *and* 'B'
 	end
+
+# Targets
+## Definition
+At first, something like a Interpreter will be there, maybe later on a native implementation will follow because of the complexity. 
