@@ -26,7 +26,11 @@ It must be annotated with **local** if you want to keep it in the current scope 
 ## Definition
 A scope defines a protected area where variables and functions are stored. A new scope is created by one of the following keywords(…) and ends with **end**.
 A scope can contain other scopes. All items in the current scope are visible in nested scopes, excluding those variables with are marked as **local**.
-
+# Type system
+## Definition
+This is a very important and interesting part. For prototyping reasons it is good to have dynamic typing, but for performance, static typing is the better choice.  I want to combine both of these to enable fast prototyping *and* fast programs.
+## Example
+A new program is created. The programmer writes some code, that fits to the use case(s). He provides some tests to guarantee that the requirements are complied. After some profiling work, he spots the critical parts of his program and adds type informations to the variables. The compiler can omit some of the infrastructure code, that extracts the from the variable and just needs the code that ensures type safety.
 # Paradigms
 ## Functional
 At first, some basic features should be supported, like pass a function as parameter to another function, assign a function to a variable and so on. Also immutable variables are important.
